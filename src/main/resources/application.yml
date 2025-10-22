@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: aws-service
+  profiles:
+    include:
+      - datasource
+
+server:
+  port: 8080
