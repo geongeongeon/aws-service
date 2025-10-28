@@ -1,11 +1,13 @@
 package com.sparta.awsservice.user;
 
+import java.io.Serializable;
+
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class ResReadUserDto {
+public class ResReadUserDto implements Serializable {
 
 	private Long id;
 

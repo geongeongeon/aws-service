@@ -2,6 +2,7 @@ spring:
   config:
     activate:
       on-profile: dev
+
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/aws_service
@@ -10,7 +11,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         format_sql: false
@@ -28,6 +29,7 @@ spring:
   config:
     activate:
       on-profile: prod
+
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://${AWS_RDS_ENDPOINT}:5432/aws_service
